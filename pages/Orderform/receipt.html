@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Receipt | Creamy Treats</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Serif+Text">
+    <style>
+        body { font-family: 'DM Serif Text', serif; background: #ffc7d5; display: flex; justify-content: center; padding: 50px; }
+        .receipt-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); max-width: 500px; width: 100%; border-top: 8px solid #d81b60; }
+        .header { text-align: center; border-bottom: 2px dashed #eee; padding-bottom: 20px; }
+        .item { display: flex; justify-content: space-between; margin: 15px 0; }
+        .label { color: #888; font-size: 0.9rem; }
+        .value { font-weight: bold; color: #5d4037; }
+        .total-box { background: #fffafb; padding: 15px; border-radius: 8px; margin-top: 20px; text-align: center; border: 1px solid #ffc1d6; }
+        .btn-print { background: #d81b60; color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; width: 100%; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="receipt-card">
+    <div class="header">
+        <h2>Order Received!</h2>
+        <p>Thank you for choosing Creamy Treats</p>
+    </div>
+
+    <div id="receipt-details">
+        <div class="item"><span class="label">Customer:</span> <span class="value" id="res-name"></span></div>
+        <div class="item"><span class="label">Cake Type:</span> <span class="value" id="res-type"></span></div>
+        <div class="item"><span class="label">Date:</span> <span class="value" id="res-date"></span></div>
+        <div class="item"><span class="label">Payment:</span> <span class="value" id="res-pay"></span></div>
+    </div>
+
+    <div class="total-box">
+        <p>We will contact you at <br><span id="res-phone" style="color:#d81b60"></span> to confirm design details.</p>
+    </div>
+
+    <button class="btn-print" onclick="window.print()">Print Receipt</button>
+    <p style="text-align:center"><a href="orderform.html" style="color:#888; font-size: 0.8rem;">Back to Store</a></p>
+</div>
+
+<script>
+    // This script reads the data from the URL or LocalStorage
+    window.onload = function() {
+        const params = new URLSearchParams(window.location.search);
+        
+        // Option: Pull from localStorage (set in the previous step)
+        document.getElementById('res-name').innerText = localStorage.getItem('custName') || "N/A";
+        document.getElementById('res-type').innerText = localStorage.getItem('cakeType') || "N/A";
+        document.getElementById('res-date').innerText = localStorage.getItem('orderDate') || "N/A";
+        document.getElementById('res-pay').innerText = localStorage.getItem('payment') || "N/A";
+        document.getElementById('res-phone').innerText = localStorage.getItem('phone') || "N/A";
+    }
+</script>
+</body>
+</html>

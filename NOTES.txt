@@ -1,0 +1,26 @@
+THINGS TO CONSIDER
+- You may contact one of our group members for any changes regarding the website.
+- The submission of forms uses a free website application called Web3Forms. 
+- The platform is free. To access it, you must notify Nathaniel Josh Lerio (nathaniellerio07@gmail.com) for access as well as how to set up your account.
+
+
+In the app, you might encounter a specific code for which package the customer wants to buy. Here is the definition of the code
+
+NAMING LEGEND
+- XT_XCUP
+(X = any number, T = Tiered Cake, CUP = Cupcakes)
+
+Example:
+- 3T_12CUP
+- This means the customer wants the 3 Tiered Cake with 12 cupcakes package
+
+
+GROUP 3 MEMBERS
+- Dave Samuel Cordova
+- Peter Daniel Jensen Galvez
+- Nathaniel Josh Lerio
+- John Dominic Nicolas
+- Vincent Roui Teves
+
+INSTRUCTOR OF ITS121-L: WEB SYSTEMS AND TECHNOLOGIES
+Mr. Rodolfo Meliton Vargas
